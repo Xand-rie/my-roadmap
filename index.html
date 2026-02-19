@@ -14,6 +14,12 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 20px; }
         .container { max-width: 900px; margin: 0 auto; background: var(--white); padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         h1, h2, h3 { color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        
+        /* New styles for the image and button */
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary); margin-bottom: 15px; }
+        .download-btn { background-color: var(--primary); color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; transition: 0.3s; margin-top: 15px; }
+        .download-btn:hover { background-color: #002244; transform: scale(1.05); }
+
         .budget-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
         .budget-table th, .budget-table td { text-align: left; padding: 12px; border-bottom: 1px solid #ddd; }
         .budget-table th { background: var(--primary); color: white; }
@@ -24,8 +30,14 @@
 <body>
     <div class="container">
         <header style="text-align: center;">
+            <!-- THIS ADDS YOUR PHOTO -->
+            <img src="And.jpg" alt="Andrew Ssemambo" class="profile-img">
+            
             <h1>MY CAREER PATH & THE SMART CAFÉ VISION</h1>
             <p class="highlight">Andrew SSEMAMBO | Future Developer-Entrepreneur</p>
+            
+            <!-- THIS ADDS YOUR DOWNLOAD BUTTON -->
+            <a href="Roadmap.pdf" download class="download-btn">Download Professional PDF</a>
         </header>
 
         <section>
